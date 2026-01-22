@@ -3,7 +3,7 @@ let selectedTags = new Set();
 
 async function loadWritings() {
     try {
-        const response = await fetch('personal/writing/writing.json');
+        const response = await fetch('Personal/Writing/writing.json');
         allWritings = await response.json();
         renderTagFilter();
         renderGallery();
@@ -79,12 +79,23 @@ function renderGallery() {
 }
 
 function formatDate(dateString) {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric' 
-    });
+    if (/^\d{4}-\d{2}$/.test(dateString)) {
+        // Only year and month
+        const [year, month] = dateString.split('-');
+        const date = new Date(year, month - 1);
+        return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long'
+        });
+    } else {
+        // Full date
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    }
 }
 
 function viewPost(id) {

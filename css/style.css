@@ -8,6 +8,7 @@ body{
     }
 }
 headbar{
+    font-size: 2vh;
     h1{
         font-family: 'Courier New', Courier, monospace;
         color: blue;
@@ -90,6 +91,7 @@ headbar{
 }
 
 button{
+    size-adjust:initial;
     background-color: rgb(148, 248, 255);
     color: blue;
     padding: 10px 20px;
@@ -99,7 +101,7 @@ button{
     font-family: 'Courier New', Courier, monospace;
 }
 .dropdown {
-  position: relative;
+  position: left;
   display: inline-block;
   text-align: left;
 }
@@ -163,4 +165,127 @@ button{
 
 .item-info h3 {
     margin-top: 0;
+}
+
+#tag-filter {
+    margin: 20px 0;
+}
+
+.tag-button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: 2px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tag-button:hover {
+    background-color: #e7f3ff;
+}
+
+.tag-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.excerpt {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #e7f3ff;
+    color: #007bff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+/* Post page styles */
+article {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+article h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+article .content {
+    margin-top: 30px;
+}
+
+article .content h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+article .content p {
+    margin-bottom: 15px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.no-results {
+    text-align: center;
+    color: #666;
+    padding: 40px;
 }
