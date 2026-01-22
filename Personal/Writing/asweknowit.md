@@ -1,4 +1,4 @@
-# As We Know It: Cutting the Line
+# As We Know It: Cutting the Cord
 
 *Last Edited: April, 2024\
 Written for Stage Performance at UWC Atlantic College\

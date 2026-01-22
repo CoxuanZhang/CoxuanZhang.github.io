@@ -7,7 +7,7 @@ def make_data(content, filepath):
     """Extract YAML-style frontmatter from markdown"""
 
     filename = os.path.basename(filepath).replace('.md', '')
-    title_pattern = r'^# \w*'
+    title_pattern = r'^# [\w ]+*'
     title = re.search(title_pattern, content, re.MULTILINE)
     if title:
         title = title.group(0).lstrip('#').strip().split()[-1]
