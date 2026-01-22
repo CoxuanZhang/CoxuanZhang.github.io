@@ -1,19 +1,94 @@
 body{
+    padding: 0 15vh 0 15vh;
     background-color: #f9f9f9;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    p{
+      margin:0px;
+    }
 }
 headbar{
     h1{
         font-family: 'Courier New', Courier, monospace;
         color: blue;
         text-align: center;
-        margin-bottom: 5px;
+        margin-top: 5vh;
     }
     .button-container{
         text-align: right;
         margin-bottom: 10px;
+        margin-bottom: 40px;
     }
-}    
+}
+.container{
+  justify-content: center;
+  align-items: flex-start;
+  display:flex;
+  gap:30px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    #profile-pic{
+        border-radius: 8px;
+        width: 100%;
+        transition: opacity 0.5s ease;
+    }
+    p{
+      line-height:1.2;
+    }
+}
+
+#left{
+    flex: 0 0 30%; 
+    gap: 20px;
+}
+
+.image-overlay-container {
+    position: relative; 
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    display: flex;
+    justify-content: right;
+}
+#overlay-text {
+    color: white;
+    margin-right: 3vh;
+    margin-top:3vh;
+}
+
+.image-overlay-container:hover .image {
+    opacity: 0.8; 
+}
+.image-overlay-container:hover .overlay {
+    opacity: 1; 
+}
+
+#contact-info{
+  justify-content: center;
+  align-items: center;
+  margin:0px;
+  gap:4vh;
+  #icon{
+    width: 4vh;
+    margin-right: 10px;
+  }
+}
+#right{
+    margin-left: 20px;
+    flex: 0 0 70%;
+    gap:30px;
+}
+
 button{
     background-color: rgb(148, 248, 255);
     color: blue;
@@ -22,12 +97,10 @@ button{
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 15px
 }
 .dropdown {
   position: relative;
   display: inline-block;
-  font-size: 15px;
   text-align: left;
 }
 
@@ -58,4 +131,36 @@ button{
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.gallery-container {
+    display: flex;       /* Activate Flexbox on the container */
+    flex-wrap: wrap;     /* Allow items to wrap to a new line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px;           /* Add space between items */
+}
+
+.gallery-item {
+    /* flex: 1 1 300px; */  /* Shorthand: Grow=1, Shrink=1, Base Width=300px */
+    width: 400px;        /* Sets a default width for each item */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;    /* Ensures image corners match container corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;         /* Image takes up the full width of its parent (.gallery-item) */
+    height: 200px;       /* Set a fixed height for consistent gallery look */
+    object-fit: cover;   /* Ensures images fill the space without distortion/stretching */
+    display: block;
+}
+
+.item-info {
+    padding: 15px;
+}
+
+.item-info h3 {
+    margin-top: 0;
 }

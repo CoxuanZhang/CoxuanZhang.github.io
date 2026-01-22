@@ -8,36 +8,59 @@
 </head>
 <headbar>
     <h1>Welcome to Coco Zhang World!</h1>
-    <div class="button-container">
-        <button onclick="location.href='projects.html'">Projects</button>
-        <div class="dropdown">
-            <span class="dropdown-trigger">Personal</span>
-            <div class="dropdown-content">
-                <l><a href="writing.html">Writing</a></l>
-                <p>Camera</p>
-                <p>Scrapbook</p>
-            </div>  
+    <div class="container">
+        <div class="column">
+            <p>My research, projects, writing, arts...</p>
+            <p>Feel free hang out here & learn more about me!</p>
         </div>
+        <div class="column">
+            <div class="button-container">
+                <button onclick="location.href='projects.html'">Projects</button>
+                <div class="dropdown">
+                    <span class="dropdown-trigger">Personal</span>
+                    <div class="dropdown-content">
+                        <l><a href="writing.html">Writing</a></l>
+                        <p>Camera</p>
+                        <p>Scrapbook</p>
+                    </div>  
+                </div>
+            </div>
+        </div> 
     </div>
 </headbar>
 <body>
-    <img id="profile-pic" src="images/profile.jpg" alt="coco selfie" width="200">
-    <p>Hello, this is Coco! I was born and raised in Shanghai, China. 
-        I went to UWC Atlantic College for IBDP. The <a href = "https://www.uwcatlantic.org/castle">little castle</a> sits on the Atlantic coast in Wales and changed my life. 
-    </p>
-    <p>
-        I am currently a Computer Science and Math major at Wellesley College where I'm interested in research on interpretable AI 
-        & robust ML algorithms, as well as projects at the intersection of our physical, applied world and its soft representations. 
-        I do these constantly pondering the nature of language, 
-        politics, and arts. </p>
-    <p>In this website, you can find my research, coursework projects, personal writing, etc. Feel free hang out in this space to learn more about me!</p>
-    <p>Find me at:</p>
-    <ul>
-        <li><a href="mailto:kz108@wellesley.edu">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/coco-kang-9b4b62194/">LinkedIn</a></li>
-        <li><a href="https://github.com/CoxuanZhang">GitHub</a></li>
-    </ul>
-    <p>Fun fact: My Chinese name is Kexuan (珂璇). Both characters mean jade, which follows my mom, whose name means the beautiful clicking sound between jades.</p>
-    <p>Thanks for visiting!</p>
+    <div class="container">
+        <div class="column" id = "left">
+            <div class="image-overlay-container">
+                <img id="profile-pic" src="images/profile.jpg" alt="coco selfie" width="200">
+                <div class="overlay">
+                    <div id = "overlay-text">Changsha, China</div>
+                </div>
+            </div>
+        <div class="container" id = "contact-info">
+            <a href="mailto:kz108@wellesley.edu">
+                <img id="icon" src="images/icons/email.png" alt="location icon" width="20">
+            </a>
+            <a href="https://www.linkedin.com/in/coco-kang-9b4b62194/">
+                <img id="icon" src="images/icons/linkedin.png" alt="email icon" width="20">
+            </a>
+            <a href="https://github.com/CoxuanZhang">
+                <img id="icon" src="images/icons/github.png" alt="linkedin icon" width="20">
+                </a>
+            </div>
+        </div>
+        <div class="column" id="right">
+            <p>Hello, this is Coco! I was born and raised in Shanghai, China. 
+                I went to UWC Atlantic College for IBDP. The <a href = "https://www.uwcatlantic.org/castle">little castle</a> sits on the Atlantic coast in Wales and changed my life. 
+            </p>
+            <p>
+                I am currently a Computer Science and Math major at Wellesley College where I'm interested in research on interpretable AI 
+                & robust ML algorithms, as well as projects at the intersection of our physical, applied world and its soft representations. 
+                I do these constantly pondering the nature of language, 
+                politics, and arts. </p>
+            <p>Fun fact: My Chinese name is Kexuan (珂璇). Both characters mean jade, which follows my mom, whose name means the beautiful clicking sound between jades.</p>
+            <p>Thanks for visiting!</p>
+        </div>
+    </div>
 </body>
 </html>
