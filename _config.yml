@@ -1,0 +1,6 @@
+title: Coco's Home Page
+email: kz108@wellesley.edu
+description: > # this means to ignore newlines until "baseurl:"
+  This is Coco Zhang's Home Page where she will post her academic projects, rnadom meditations, and leisurely crafts. 
+url: "http://CoxuanZhang.github.io" # the base hostname & protocol for your site
+theme: minima
