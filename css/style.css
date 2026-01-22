@@ -132,3 +132,35 @@ button{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.gallery-container {
+    display: flex;       /* Activate Flexbox on the container */
+    flex-wrap: wrap;     /* Allow items to wrap to a new line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px;           /* Add space between items */
+}
+
+.gallery-item {
+    /* flex: 1 1 300px; */  /* Shorthand: Grow=1, Shrink=1, Base Width=300px */
+    width: 400px;        /* Sets a default width for each item */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;    /* Ensures image corners match container corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;         /* Image takes up the full width of its parent (.gallery-item) */
+    height: 200px;       /* Set a fixed height for consistent gallery look */
+    object-fit: cover;   /* Ensures images fill the space without distortion/stretching */
+    display: block;
+}
+
+.item-info {
+    padding: 15px;
+}
+
+.item-info h3 {
+    margin-top: 0;
+}
