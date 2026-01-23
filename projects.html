@@ -8,27 +8,35 @@
 </head>
 <headbar>
     <h1>Projects</h1>
+    <div class="container">
+        <div class="column">
+            <p>These include research, fellowship, coursework projects: </p>
+            <p>They range from NLP to Electronics, even Narrative Studies!</p>
+        </div>
     <div class="button-container">
                 <button onclick="location.href='index.html'">Home</button>
                 <div class="dropdown">
                     <span class="dropdown-trigger">Personal</span>
                     <div class="dropdown-content">
                         <l><a href="writing.html">Writing</a></l>
-                        <p>Camera</p>
-                        <p>Scrapbook</p>
+                        <l><a href="camera.html">Camera</a></l>
+                        <l><a href="scrapbook.html">Scrapbook</a></l>
                     </div>  
                 </div>
             </div>
+    </div>
 </headbar>
 <body>
     <div class="gallery-container">
     <!--CS 333: Narrative Feature Extraction-->
     <div class="gallery-item">
+        <img src="images/projects/cs333nlp.png" alt="Performance Graph from Paper">
         <div class="item-info">
             <h3>NLP: Narrative Feature Extraction and Clustering from Humanitarian Journalism</h3>
             <p>Developed with the coursework from CS333 Natural Language Processing (instructed by Prof. Carolyn Anderson)
                 at Wellesley College, I independently worked on corpus curation, methodology design, model training, and evaluation.</p>
-            <a href="https://github.com/CoxuanZhang/CS333_NLP"> Check out the GitHub Repository</a>
+            <p>Check out the <a href="https://github.com/CoxuanZhang/CS333_NLP"> GitHub Repository</a></p>
+            <p><a href="projects/CS333_Final_Paper.pdf"> Read the Paper! </a></p>
         </div>
     </div>
 
@@ -37,6 +45,7 @@
         <img src="images/projects/phys210.jpg" alt="Photo Credits: Jonathon Kemp at Project Showcase">
         <div class="item-info">
             <h3>Naive Photo Scanner: PHYS/ENGR 210 Electronics Final Project</h3>
+            <p>Check out my <a href="projects/PHYS210_Electronics_Lesson.pdf"> Project Manual.</a></p>
             <p>More information coming...</p>
         </div>
     </div>
@@ -45,17 +54,20 @@
         <div class="gallery-item">
         <img src="images/projects/narrativelab.png" alt="Photo Credits: TSSL Narrative Lab Website">
         <div class="item-info">
-            <h3>Western Institutional Focaliser in Humanitarian Narratives: TSSL/Mellon Narrative Lab Fellow ’25</h3>
-            <a href="https://blogs.wellesley.edu/tssl/2025/09/26/spring-2025-narrative-lab-research-prospectus-coco-zhang/"> Check out the Research Prospectus</a>
-        </div>
+            <h3>Western Institutional Focaliser in Humanitarian Narratives: TSSL/Mellon Narrative Lab</h3>
+            <p>"The idea of an institutional master narrative in humanitarianism struck me during a presentation by a former USAID 
+                policymaker on localisation, a sector goal recognised in the decade..."</p> 
+                <p>Read more about it <a href="https://blogs.wellesley.edu/tssl/2025/09/26/spring-2025-narrative-lab-research-prospectus-coco-zhang/">
+                    here</a></p>
+                </div>
     </div>
 
     <!--CS 299 / PHIL 222: A Byte of Wellesley-->
     <div class="gallery-item">
         <img src="images/projects/cs299_pinterest.png" alt="Screenshot from project website">
         <div class="item-info">
-            <h3>Pinterest Algorithm Analysis: CS 299 / PHIL 222 Group Work</h3>
-            <p>More information coming...</p>
+            <h3>Auditing Pinterest Skin Tone Classification Algorithm : CS 299 / PHIL 222 Group Work</h3>
+            <p>Inspired byProfessor Safiya Noble's book, <a href="https://files.commons.gc.cuny.edu/wp-content/blogs.dir/6105/files/2019/01/SAFIYA-NOBLE.pdf">Algorithm of Oppression</a>, we wanted to understand <em>how are we seen by the algorithm, and how it in-turn impacts our self-perception?</em></em></p>
         </div>
     </div>
 
@@ -64,7 +76,10 @@
         <img src="images/projects/cs299_bytesofW.png" alt="Screenshot from project website">
         <div class="item-info">
             <h3>A Byte of Wellesley: CS 299 / PHIL 222 Final Group Project</h3>
-            <a href="https://cs.wellesley.edu/~digihist/index.html">Check out our final website.</a>
+            <p>A data-driven project using archival research, interviews, and surveys, to map and evaluate 
+                the history and current moment of digital communication at Wellesley College!</p>
+            <p>Fun fact: it started with <i>the Peanuts</i>!</p>
+            <p>Check out our <a href="https://cs.wellesley.edu/~digihist/index.html">final website!</a></p>
         </div>
     </div>
 </body>
