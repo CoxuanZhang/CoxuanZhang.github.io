@@ -32,7 +32,8 @@ def make_data(content, filepath):
         if cont == 'Unknown':
             data[prop] = input(f"Please enter {prop} for {filename}: ")
     
-    data['tags'] = input(f"Please enter tags (comma-separated) for {filename}: ").split(',')
+    tags = input(f"Please enter tags (comma-separated) for {filename}: ").split(',')
+    data['tags'] = [tag.strip() for tag in tags if tag.strip()]
     print(data)
     data['date'] = make_date(data)
     return data
