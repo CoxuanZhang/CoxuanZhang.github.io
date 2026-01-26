@@ -12,12 +12,12 @@ async function loadPost() {
     try {
         // Load the index to get post metadata
         const indexResponse = await fetch('personal/writing/writing.json');
+        const indexText = await indexResponse.text();
         let writings;
         try {
-            writings = await indexResponse.json();
+            writings = JSON.parse(indexText);
         } catch (jsonError) {
-            const text = await indexResponse.text();
-            console.error('Failed to parse JSON. Response text:', text);
+            console.error('Failed to parse JSON. Response text:', indexText);
             throw jsonError;
         }
         const writing = writings.find(w => w.id === postId);
