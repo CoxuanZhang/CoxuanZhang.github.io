@@ -11,7 +11,7 @@ async function loadPost() {
     
     try {
         // Load the index to get post metadata
-        const indexResponse = await fetch('personal/writing/writing.json');
+        const indexResponse = await fetch('Personal/Writing/writing.json');
         const indexText = await indexResponse.text();
         let writings;
         try {
