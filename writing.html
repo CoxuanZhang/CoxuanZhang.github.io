@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Writings</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
-<headbar>
+<header>
     <h1>My Writings</h1>
-    <div class="button-container">
-    <button onclick="location.href='index.html'">Home</button>
-    <div class="dropdown">
-    <span class="dropdown-trigger">Personal</span>
-        <div class="dropdown-content">
-            <l><a href="writing.html">Writing</a></l>
-            <l><a href="camera.html">Camera</a></l>
-            <l><a href="scrapbook.html">Scrapbook</a></l>
-        </div>   
-    </div>
+    <div class="container">
+        <div class="column">
+             <div id="tag-filter"></div>
+        </div>
+        <div class="column" id ="right-column">
+                <div class="button-container">
+                    <button onclick="location.href='index.html'">Home</button>
+                    <button onclick="location.href='projects.html'">Projects</button>
+                    <div class="dropdown">
+                        <span class="dropdown-trigger">Personal</span>
+                        <div class="dropdown-content">
+                            <l><a class="active" href="writing.html">Writing</a></l>
+                            <l><a href="camera.html">Camera</a></l>
+                            <l><a href="scrapbook.html">Scrapbook</a></l>
+                        </div>   
+                    </div>
+                </div>
             </div>
-            <div id="tag-filter"></div>
-</headbar>
+    </div>
+</header>
 <body>
     <div class="container">
         
