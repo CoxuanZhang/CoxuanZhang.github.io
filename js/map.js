@@ -1,104 +1,89 @@
-mapboxgl.accessToken = 'pk.eyJ1Ijoia3oxMDgiLCJhIjoiY21rdW0zYWhhMWIwYjNkcHV2MnRwYm5oZSJ9.fz1JGZKf66I3RbK_9ADALw';
+mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/outdoors-v12', // style URL
-    center: [-3.5334,51.4048],    
-    zoom: 2 // starting zoom
+    style: 'mapbox://styles/mapbox/outdoors-v12',
+    center: [121.473, 31.2479],
+    zoom: 2.8,
+    attributionControl: true
+});
+
+const mapStage = document.getElementById('map-stage');
+const drawer = document.getElementById('drawer-container');
+const drawerContent = document.getElementById('drawer-content');
+const drawerClose = document.getElementById('drawer-close');
+let lastScrollY = window.scrollY;
+let selectedCoordinates = null;
+
+function panelWidth() {
+    return window.innerWidth <= 700 ? window.innerWidth * 0.94 : window.innerWidth * 0.75;
+}
+
+function initialMapPadding() {
+    return { top: 0, bottom: 0, left: 0, right: window.innerWidth > 700 ? window.innerWidth * 0.5 : 0 };
+}
+
+function closeDrawer() {
+    drawer.classList.remove('drawer-expanded');
+    drawer.setAttribute('aria-hidden', 'true');
+    if (selectedCoordinates) {
+        map.flyTo({ center: selectedCoordinates, zoom: 2.8, padding: initialMapPadding(), essential: true });
+    }
+}
+
+function updateHeaderOnScroll() {
+    const stageBounds = mapStage.getBoundingClientRect();
+    const scrollingDown = window.scrollY > lastScrollY;
+    if (scrollingDown && stageBounds.top <= 0) document.body.classList.add('camera-header-hidden');
+    else if (!scrollingDown && stageBounds.bottom > 0) document.body.classList.remove('camera-header-hidden');
+    lastScrollY = window.scrollY;
+}
+
+drawerClose.addEventListener('click', closeDrawer);
+document.addEventListener('keydown', event => { if (event.key === 'Escape') closeDrawer(); });
+window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
+window.addEventListener('resize', () => {
+    if (drawer.classList.contains('drawer-expanded')) map.resize();
+    else map.setPadding(initialMapPadding());
 });
 
 map.on('load', function () {
-
-        // Close drawer when clicking outside map and drawer
-        document.addEventListener('click', function(event) {
-            const drawer = document.getElementById('drawer-container');
-            const mapDiv = document.getElementById('map');
-            if (
-                drawer &&
-                !drawer.contains(event.target) &&
-                mapDiv &&
-                !mapDiv.contains(event.target)
-            ) {
-                drawer.classList.remove('drawer-expanded');
-            }
-        });
-    map.addSource('locations', {
-        type: 'geojson',    
-        data: '/Personal/Camera/locations.geojson'
-    });
-
-    fetch('/Personal/Camera/locations.geojson')
+    map.setPadding(initialMapPadding());
+    map.addSource('locations', { type: 'geojson', data: 'Personal/Camera/locations.geojson' });
+    fetch('Personal/Camera/locations.geojson')
         .then(response => response.json())
         .then(geojson => {
             geojson.features.forEach(feature => {
                 const location = feature.properties.location;
                 const layerId = `location-point-${location}`;
                 map.addLayer({
-                    id: layerId,
-                    type: 'circle',
-                    source: 'locations',
+                    id: layerId, type: 'circle', source: 'locations',
                     filter: ['==', ['get', 'location'], location],
-                    paint: {
-                        'circle-radius': [
-                            'step',
-                            ['get', 'photo_counts'],
-                            8,    // default: 1-2 photos
-                            3, 12, // 3-5 photos
-                            6, 16, // 6-8 photos
-                            9, 20  // 9+ photos
-                        ],
-                        'circle-color': '#054A75',
-                        'circle-opacity': 0.8
-                    }
+                    paint: { 'circle-radius': ['step', ['get', 'photo_counts'], 8, 3, 12, 6, 16, 9, 20], 'circle-color': '#054A75', 'circle-opacity': 0.8 }
                 });
-
-                // Add hover popup for this layer
                 let popup;
-                map.on('mouseenter', layerId, function (e) {
+                map.on('mouseenter', layerId, event => {
                     map.getCanvas().style.cursor = 'pointer';
-                    const coordinates = e.features[0].geometry.coordinates.slice();
-                    const name = e.features[0].properties.location;
                     popup = new mapboxgl.Popup({ closeButton: false, closeOnClick: false })
-                        .setLngLat(coordinates)
-                        .setHTML(`<strong>${name}</strong>`)
-                        .addClassName('my-popup')
-                        .addTo(map);
+                        .setLngLat(event.features[0].geometry.coordinates.slice())
+                        .setHTML(`<strong>${location}</strong>`).addClassName('my-popup').addTo(map);
                 });
-                map.on('mouseleave', layerId, function () {
+                map.on('mouseleave', layerId, () => {
                     map.getCanvas().style.cursor = '';
                     if (popup) popup.remove();
                 });
-                // Add click event to expand drawer
-                map.on('click', layerId, function (e) {
-                    const name = e.features[0].properties.location;
-                    const drawer = document.getElementById('drawer-container');
-                    const content = document.getElementById('drawer-content');
-                    // Fetch photos_data.json and display images for this location
+                map.on('click', layerId, event => {
+                    selectedCoordinates = event.features[0].geometry.coordinates.slice();
                     fetch('Personal/Camera/photos_data.json')
-                        .then(resp => resp.json())
+                        .then(response => response.json())
                         .then(photoData => {
-                            const photos = photoData[name] || [];
-                            let photoHTML = '';
-                            if (photos.length > 0) {
-                                photoHTML = `<div id="drawer-scroll-container">` +
-                                    photos.map(photo =>
-                                        `<img src="/${photo.path}" alt="${photo.ID}" title="${photo.ID}">`
-                                    ).join('') +
-                                    `</div>`;
-                            } else {
-                                photoHTML = '<p>No photos available for this location.</p>';
-                            }
-                            content.innerHTML = `<h3>${name}</h3>${photoHTML}`;
+                            const photos = (photoData[location] || []).filter(photo => /\.(jpe?g|png|gif|webp)$/i.test(photo.path));
+                            drawerContent.innerHTML = `<h2>${location}</h2>` + (photos.length
+                                ? `<div class="photo-stack">${photos.map(photo => `<img src="${photo.path}" alt="${photo.ID || location}" title="${photo.ID || location}">`).join('')}</div>`
+                                : '<p>No photos available for this location.</p>');
+                            drawer.classList.add('drawer-expanded');
+                            drawer.setAttribute('aria-hidden', 'false');
                         });
-                    drawer.classList.add('drawer-expanded');
-                    // Center the map on the clicked pin
-                    const coordinates = e.features[0].geometry.coordinates.slice();
-                    map.easeTo({ center: coordinates });
-                    // Scroll so the map title is at the top
-                    const mapTitle = document.getElementById('map-title');
-                    if (mapTitle) {
-                        const y = mapTitle.getBoundingClientRect().top + window.pageYOffset - 30; // 30px margin
-                        window.scrollTo({ top: y, behavior: 'smooth' });
-                    }
+                    map.flyTo({ center: selectedCoordinates, zoom: Math.max(map.getZoom(), 4.5), padding: { top: 0, bottom: 0, left: 0, right: panelWidth() }, essential: true });
                 });
             });
         });
