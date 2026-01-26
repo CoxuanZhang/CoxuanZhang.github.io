@@ -1,14 +1,23 @@
 [
+    {
+    "id": "explainability",
+    "filepath": "personal/writing/explainability.md",
+    "title": "Not to Chase the Perfect Explainability",
+    "date": "2026-01",
+    "tags": [
+      "reflection"
+      ],
+    "excerpt": "It only occurs to me at every new year countdown that we circled the sun once again. The grandest motion in the life of non-astronauts, in terms of cosmic scale. I flew from London back to Shanghai, from one home-like place to another. Waking up dizzy on melatonin at 1am, I expected the rare sunshine in a normal West London afternoon, instead I'm in a dark room where I grew up. My lockscreen said Jan. 1, 2026. There wasn't any seismic effect. With my quiet suburban neighborhood, I tried to go back to sleep."
+  },
   {
     "id": "h1b_wj",
     "filepath": "personal/writing/h1b_wj.md",
     "title": "Aliens aren’t from Outer Space, just Outer States",
     "date": "2025-10-02",
     "tags": [
-      "news",
-      "policy"
+      "news"
     ],
-    "excerpt": "Amid anxious phone calls, some passengers reluctantly deplaned, slowly dragging their carry-on. On the same night, the same tension seized many international travellers — aliens, or non-citizens in the U.S. immigration system. Coming from the Latin adjective *aliēnus*, which means of another, the word **alien** has been reimagined through sci-fi, and now veils non-citizens with an outcast identity. "
+    "excerpt": "Amid anxious phone calls, some passengers reluctantly deplaned, slowly dragging their carry-on. On the same night, the same tension seized many international travellers — aliens, or non-citizens in the U.S. immigration system. Coming from the Latin adjective aliēnus, which means of another, the word alien has been reimagined through sci-fi, and now veils non-citizens with an outcast identity. "
   },
   {
     "id": "Who built the pandemic?",
@@ -17,16 +26,15 @@
     "date": "2024-11-08",
     "tags": [
       "news",
-      "policy",
-      "reflection"
+      "stage"
     ],
-    "excerpt": "There was a time when word went around about who created the virus.** Some more politically-minded people blamed evil scientists working day and night. Some less creative pondered who nibbled at the first bat. Countries and narratives jousted about one another. Now, even these fistfights seem to be forgotten. That’s why I want to start with a chronology of COVID-19."
+    "excerpt": "There was a time when word went around about who created the virus. Some more politically-minded people blamed evil scientists working day and night. Some less creative pondered who nibbled at the first bat. Countries and narratives jousted about one another. Now, even these fistfights seem to be forgotten. That’s why I want to start with a chronology of COVID-19."
   },
   {
     "id": "asweknowit",
     "filepath": "personal/writing/asweknowit.md",
     "title": "As We Know It: Cutting the Cord",
-    "date": "2024-00",
+    "date": "2024-04",
     "tags": [
       "family",
       "reflection",

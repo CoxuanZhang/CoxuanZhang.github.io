@@ -5,21 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Writings</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css" rel="stylesheet" />
+</head> 
 <headbar>
             <h1>My Camera</h1>
-            <div class="button-container">
-                <button onclick="location.href='index.html'">Home</button>
-                <div class="dropdown">
-                    <span class="dropdown-trigger">Personal</span>
-                    <div class="dropdown-content">
-                        <l><a href="writing.html">Writing</a></l>
-                        <l><a href="camera.html">Camera</a></l>
-                        <l><a href="scrapbook.html">Scrapbook</a></l>
-                    </div>   
+            <div class="container">
+                <div class="column">
+                    <p>I have used a Canon EOS digital camera for everything!</p>
+                    <p>Help yourself to the photos and videos edited from my life and travel.</p>
+                </div>
+                <div class="button-container">
+                    <button onclick="location.href='index.html'">Home</button>
+                    <div class="dropdown">
+                        <span class="dropdown-trigger">Personal</span>
+                        <div class="dropdown-content">
+                            <l><a href="writing.html">Writing</a></l>
+                            <l><a href="camera.html">Camera</a></l>
+                            <l><a href="scrapbook.html">Scrapbook</a></l>
+                        </div>   
+                    </div>
                 </div>
             </div>
 </headbar>
+<body>
+    <div id="map"></div>
+    <h2>Slices of my Life</h2>
+    <div class="scroll-container" id ="video-scroll">
+        <div class="video-container">
+            <h3>The BIG 25 in my Canon | UK, US, Uganda…</h3>
+            <p>Edited with clips filmed between 2025.3-2026.1</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_aXBpj1yEV0?si=I_HMde17mOgZGNx2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <h3>A summer in my Canon | Boston, Karuizawa, Taizhou…</h3>
+            <p>Edited with clips filmed between 2025.6-2026.8</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0oHqJ23Awlk?si=PL0U7MYC20PXcehg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <h3>Throwback 2023-2024 | 烟花 - 窦靖童</h3>
+            <p>Edited with clips filmed between 2023-2024</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MaSQk_LwCS8?si=HQr7AVEV39gDJi0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js"></script>
+    <script src="js/map.js"> </script>
+</body>
 
 <!--When clicking into this file, the camera icon sticks on top-left corner, the shutter goes off 
 with a flash when user enters. Then, there's a world map with photos and descriptions that user can see when they
