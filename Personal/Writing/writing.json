@@ -1,7 +1,7 @@
 [
     {
     "id": "explainability",
-    "filepath": "personal/writing/explainability.md",
+    "filepath": "Personal/Writing/explainability.md",
     "title": "Not to Chase the Perfect Explainability",
     "date": "2026-01",
     "tags": [
@@ -11,7 +11,7 @@
   },
   {
     "id": "h1b_wj",
-    "filepath": "personal/writing/h1b_wj.md",
+    "filepath": "Personal/Writing/h1b_wj.md",
     "title": "Aliens aren’t from Outer Space, just Outer States",
     "date": "2025-10-02",
     "tags": [
@@ -21,7 +21,7 @@
   },
   {
     "id": "Who built the pandemic?",
-    "filepath": "personal/writing/pandemic.md",
+    "filepath": "Personal/Writing/pandemic.md",
     "title": "Who Built the Pandemic?",
     "date": "2024-11-08",
     "tags": [
@@ -32,7 +32,7 @@
   },
   {
     "id": "asweknowit",
-    "filepath": "personal/writing/asweknowit.md",
+    "filepath": "Personal/Writing/asweknowit.md",
     "title": "As We Know It: Cutting the Cord",
     "date": "2024-04",
     "tags": [
