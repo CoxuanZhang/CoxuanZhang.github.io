@@ -12,32 +12,32 @@ async function loadPost() {
     try {
         // Load the index to get post metadata
         const indexResponse = await fetch('personal/writing/writing.json');
-        const writings = await indexResponse.json();
+        let writings;
+        try {
+            writings = await indexResponse.json();
+        } catch (jsonError) {
+            const text = await indexResponse.text();
+            console.error('Failed to parse JSON. Response text:', text);
+            throw jsonError;
+        }
         const writing = writings.find(w => w.id === postId);
-        
         if (!writing) {
             throw new Error('Post not found');
         }
-        
         // Load the markdown file
         const mdResponse = await fetch(writing.filepath);
         const markdown = await mdResponse.text();
-        
         // Remove frontmatter
         const content = markdown
-        
         // Render markdown to HTML
         const html = marked.parse(content);
-        
         // Display the post
         document.getElementById('post-content').innerHTML = `
             <div class="content">
                 ${html}
             </div>
         `;
-        
         document.title = writing.title;
-        
     } catch (error) {
         console.error('Error loading post:', error);
         document.getElementById('post-content').innerHTML = 
