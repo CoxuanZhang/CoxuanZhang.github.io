@@ -7,7 +7,7 @@ The script was designed as a monologue later adapted with theatrical elements. T
 | Name      | Role | How did it happen:|
 | ----------- | ----------- | ----------- | 
 | *Achilles*      | **My father**       | Achilles and I were running a murder mystery project week together.
-| *Alice*   | **Alice (in the Wonderland)**        | Alice and I are roommates and we found her name very metaphorical.
+| *Alice*   | **Alice (in the Wonderland)**        | Alice and I are roommates and we found her name the perfect metaphor.
 
 >Upstage right: Coco will sit on a chair covered in red\
 Downstage left: Achilles sits on a wood chair in a black suit
