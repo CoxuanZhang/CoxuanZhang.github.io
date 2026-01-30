@@ -31,10 +31,10 @@
             </div>
         </header>
 <body>
-    <h2>World Map of My Photos</h2>
-    <p>Under Maintenance: Soon you will be able to click on the map pins to see where I have been shooting recently.</p>
+    <h2 id="map-title">World Map of My Photos:</h2>
+    <p>Click on the pins to explore</p>
     <div id="map"></div>
-    <h2>Slices of my Life</h2>
+    <h2 id="video-title">Slices of my Life</h2>
     <p>I also take a lot of videos, recording the streets I walked, the sea I sat by, and the people I was surrounded by.<br>
         You can get a glimpse of different times in my life with these video edits below!
     </p>
@@ -55,8 +55,13 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MaSQk_LwCS8?si=HQr7AVEV39gDJi0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
+    <div id="drawer-container" class="drawer-collapsed">
+        <div id="drawer-content">
+            <!-- Dynamic content for the selected location will go here -->
+        </div>
+    </div>
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js"></script>
-    <script src="js/map.js"> </script>
+    <script src="js/map.js"></script>
 </body>
 
 <!--When clicking into this file, the camera icon sticks on top-left corner, the shutter goes off 
