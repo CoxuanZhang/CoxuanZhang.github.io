@@ -23,10 +23,10 @@ map.on('load', function () {
         });
     map.addSource('locations', {
         type: 'geojson',    
-        data: '/personal/camera/locations.geojson'
+        data: '/Personal/Camera/locations.geojson'
     });
 
-    fetch('/personal/camera/locations.geojson')
+    fetch('/Personal/Camera/locations.geojson')
         .then(response => response.json())
         .then(geojson => {
             geojson.features.forEach(feature => {
