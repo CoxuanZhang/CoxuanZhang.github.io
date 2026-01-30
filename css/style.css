@@ -1,3 +1,60 @@
+#drawer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 0;
+    background: #fffbe6;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.12);
+    overflow: hidden;
+    transition: height 0.4s cubic-bezier(0.4,0,0.2,1);
+    z-index: 2000;
+    /* Make sure children are positioned relative to this container */
+    position: fixed;
+}
+#drawer-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 16px;
+    padding: 10px 0;
+}
+#drawer-scroll-container img {
+    margin-top:0px;
+    height: 40vh;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    object-fit: cover;
+}
+#map-title, #video-title {
+    margin-bottom: 0.1em;
+}
+ #map-title + p, #video-title + p {
+    margin-top: 0.05em;
+}
+/* Collapsed drawer at bottom of page */
+#drawer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 0;
+    background: #fffbe6e2;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.12);
+    overflow: hidden;
+    transition: height 0.4s cubic-bezier(0.4,0,0.2,1);
+    z-index: 2000;
+    padding: 24px 32px;
+}
+#drawer-container.drawer-expanded {
+    height: 50%; /* or whatever expanded height you want */
+}
+#drawer-content {
+    padding: 0px;
+    height: 100%;
+    overflow-y: auto;
+}
 body{
     padding: 0 15vh 0 15vh;
     background-color: #f0f4f1;
@@ -381,4 +438,12 @@ padding: 20px;
     margin: 30px 0;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.mapboxgl-popup.my-popup .mapboxgl-popup-content {
+    background: #fffbe6;
+    color: #054A75;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
 }
