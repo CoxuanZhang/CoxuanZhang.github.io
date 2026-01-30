@@ -37,7 +37,7 @@ def load_geolocations():
                 updated = True
         else:
             coordinate = input(f"What is the coordinate of {location}?")
-            coordinate = [float(re.sub(r'[^0-9.]', '', s)) for s in coordinate.split(',')]
+            coordinate = [float(re.sub(r'[^0-9.-]', '', s)) for s in coordinate.split(',')]
             ID = input(f"What is the ID of {location}? ")
             location_map[location] = {
                 "location": location,
@@ -112,14 +112,15 @@ def load_geojson():
         locations = json.load(f)
     features = []
     for loc in locations:
-        # Expecting coordinate as [lon, lat] or [lat, lon]  
+        # Expecting coordinate as [lat, lon], but GeoJSON needs [lon, lat]
         coord = loc.get("coordinate")
         if coord and len(coord) == 2:
+            flipped_coord = [coord[1], coord[0]]
             features.append({
                 "type": "Feature",
                 "geometry": {
                     "type": "Point",
-                    "coordinates": coord
+                    "coordinates": flipped_coord
                 },
                 "properties": {
                     "location": loc.get("location"),

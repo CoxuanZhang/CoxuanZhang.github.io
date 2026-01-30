@@ -14,7 +14,7 @@
     "path": "Personal/Camera/Photos/Boston, USA",
     "coordinate": [
       42.3555,
-      71.0565
+      -71.0565
     ],
     "photo_counts": 9,
     "ID": "BOS_USA"
@@ -23,8 +23,8 @@
     "location": "Wellesley, USA",
     "path": "Personal/Camera/Photos/Wellesley, USA",
     "coordinate": [
-      442.2877,
-      71.2862
+      42.2965,
+      -71.2926
     ],
     "photo_counts": 4,
     "ID": "W_USA"
@@ -44,7 +44,7 @@
     "path": "Personal/Camera/Photos/Rockport, USA",
     "coordinate": [
       42.6548,
-      70.623
+      -70.623
     ],
     "photo_counts": 9,
     "ID": "RP_USA"
@@ -124,7 +124,7 @@
     "path": "Personal/Camera/Photos/New York, USA",
     "coordinate": [
       40.7128,
-      74.006
+      -74.006
     ],
     "photo_counts": 6,
     "ID": "NYC_USA"
@@ -224,7 +224,7 @@
     "path": "Personal/Camera/Photos/Middlebury, USA",
     "coordinate": [
       44.0153371,
-      73.16734
+      -73.16734
     ],
     "photo_counts": 2,
     "ID": "MIDD_USA"
@@ -234,7 +234,7 @@
     "path": "Personal/Camera/Photos/New Haven, USA",
     "coordinate": [
       41.310726,
-      72.9299
+      -72.9299
     ],
     "photo_counts": 7,
     "ID": "NH_USA"
