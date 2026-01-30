@@ -6,7 +6,7 @@
       28.2278,
       112.9389
     ],
-    "photo_counts": 3,
+    "photo_counts": 2,
     "ID": "CS_CN"
   },
   {
@@ -46,7 +46,7 @@
       42.6548,
       70.623
     ],
-    "photo_counts": 7,
+    "photo_counts": 9,
     "ID": "RP_USA"
   },
   {
@@ -66,7 +66,7 @@
       51.4048,
       3.5334
     ],
-    "photo_counts": 5,
+    "photo_counts": 4,
     "ID": "StD_W"
   },
   {
@@ -77,7 +77,7 @@
       117.9711
     ],
     "photo_counts": 2,
-    "ID": "SD,CN"
+    "ID": "SD_CN"
   },
   {
     "location": "Valencia, Spain",
@@ -86,7 +86,7 @@
       39.4699,
       0.3763
     ],
-    "photo_counts": 13,
+    "photo_counts": 15,
     "ID": "VL_SP"
   },
   {
@@ -126,7 +126,7 @@
       40.7128,
       74.006
     ],
-    "photo_counts": 2,
+    "photo_counts": 6,
     "ID": "NYC_USA"
   },
   {
@@ -176,7 +176,7 @@
       51.5074,
       0.1278
     ],
-    "photo_counts": 6,
+    "photo_counts": 5,
     "ID": "LDN_ENG"
   },
   {
@@ -206,7 +206,7 @@
       48.8566,
       2.3522
     ],
-    "photo_counts": 5,
+    "photo_counts": 4,
     "ID": "PR_FR"
   },
   {
@@ -226,7 +226,17 @@
       44.0153371,
       73.16734
     ],
-    "photo_counts": 3,
+    "photo_counts": 2,
     "ID": "MIDD_USA"
+  },
+  {
+    "location": "New Haven, USA",
+    "path": "Personal/Camera/Photos/New Haven, USA",
+    "coordinate": [
+      41.310726,
+      72.9299
+    ],
+    "photo_counts": 7,
+    "ID": "NH_USA"
   }
 ]

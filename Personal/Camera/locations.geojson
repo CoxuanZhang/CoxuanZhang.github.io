@@ -1,0 +1,365 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2278,
+          112.9389
+        ]
+      },
+      "properties": {
+        "location": "Changsha, China",
+        "ID": "CS_CN",
+        "photo_counts": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.3555,
+          71.0565
+        ]
+      },
+      "properties": {
+        "location": "Boston, USA",
+        "ID": "BOS_USA",
+        "photo_counts": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          442.2877,
+          71.2862
+        ]
+      },
+      "properties": {
+        "location": "Wellesley, USA",
+        "ID": "W_USA",
+        "photo_counts": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.9042,
+          116.4074
+        ]
+      },
+      "properties": {
+        "location": "Beijing, China",
+        "ID": "BJ_CN",
+        "photo_counts": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.6548,
+          70.623
+        ]
+      },
+      "properties": {
+        "location": "Rockport, USA",
+        "ID": "RP_USA",
+        "photo_counts": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3193,
+          114.1694
+        ]
+      },
+      "properties": {
+        "location": "Hong Kong",
+        "ID": "HK",
+        "photo_counts": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.4048,
+          3.5334
+        ]
+      },
+      "properties": {
+        "location": "St. Donats, Wales",
+        "ID": "StD_W",
+        "photo_counts": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.3831,
+          117.9711
+        ]
+      },
+      "properties": {
+        "location": "Shandong, China",
+        "ID": "SD_CN",
+        "photo_counts": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.4699,
+          0.3763
+        ]
+      },
+      "properties": {
+        "location": "Valencia, Spain",
+        "ID": "VL_SP",
+        "photo_counts": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6941,
+          139.7454
+        ]
+      },
+      "properties": {
+        "location": "Tokyo, Japan",
+        "ID": "TK_JP",
+        "photo_counts": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2479,
+          121.473
+        ]
+      },
+      "properties": {
+        "location": "Shanghai, China",
+        "ID": "SH_CN",
+        "photo_counts": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.3486,
+          138.5969
+        ]
+      },
+      "properties": {
+        "location": "Karuizawa, Japan",
+        "ID": "K_JP",
+        "photo_counts": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.7128,
+          74.006
+        ]
+      },
+      "properties": {
+        "location": "New York, USA",
+        "ID": "NYC_USA",
+        "photo_counts": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.2526,
+          120.165
+        ]
+      },
+      "properties": {
+        "location": "Hangzhou, China",
+        "ID": "HZ_CN",
+        "photo_counts": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.5244,
+          13.4105
+        ]
+      },
+      "properties": {
+        "location": "Berlin, Germany",
+        "ID": "BER_DE",
+        "photo_counts": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1297,
+          113.2618
+        ]
+      },
+      "properties": {
+        "location": "Guangzhou, China",
+        "ID": "GZ_CN",
+        "photo_counts": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.4907,
+          119.9081
+        ]
+      },
+      "properties": {
+        "location": "Taizhou, China",
+        "ID": "TZ_CN",
+        "photo_counts": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.5074,
+          0.1278
+        ]
+      },
+      "properties": {
+        "location": "London, England",
+        "ID": "LDN_ENG",
+        "photo_counts": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.58474,
+          100.21229
+        ]
+      },
+      "properties": {
+        "location": "Dali, China",
+        "ID": "DL_CN",
+        "photo_counts": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.01,
+          31.17
+        ]
+      },
+      "properties": {
+        "location": "Arua, Uganda",
+        "ID": "ARUA_UG",
+        "photo_counts": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.8566,
+          2.3522
+        ]
+      },
+      "properties": {
+        "location": "Paris, France",
+        "ID": "PR_FR",
+        "photo_counts": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.385,
+          2.173
+        ]
+      },
+      "properties": {
+        "location": "Barcelona, Spain",
+        "ID": "BCN_SP",
+        "photo_counts": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0153371,
+          73.16734
+        ]
+      },
+      "properties": {
+        "location": "Middlebury, USA",
+        "ID": "MIDD_USA",
+        "photo_counts": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.310726,
+          72.9299
+        ]
+      },
+      "properties": {
+        "location": "New Haven, USA",
+        "ID": "NH_USA",
+        "photo_counts": 7
+      }
+    }
+  ]
+}

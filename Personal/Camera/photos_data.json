@@ -2,27 +2,20 @@
   "Changsha, China": [
     {
       "ID": "CS_CN_001",
-      "title": "Merry-Go-Round",
-      "description": "This amusement park has been left unattended in recent years. Only two ticket sellers work across dozens of dusty rides. Perhaps once the joyous, none of the rides was running when I passed by. The merry-go-round ticketer caught me taking photos and convinced me to take a ride, and it was a good one.",
-      "date": "2026-1-5",
+      "title": "",
+      "description": "",
+      "date": "",
       "path": "Personal/Camera/Photos/Changsha, China/CS_CN_001.jpg"
     },
     {
       "ID": "CS_CN_000",
-      "title": "Palm Leaves",
-      "description": "Up is one of the best directions to be looking at.",
-      "date": "2026-1-5",
+      "title": "",
+      "description": "",
+      "date": "",
       "path": "Personal/Camera/Photos/Changsha, China/CS_CN_000.jpg"
     }
   ],
   "Boston, USA": [
-    {
-      "ID": "BOS_USA_008",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/Boston, USA/BOS_USA_008.jpg"
-    },
     {
       "ID": "BOS_USA_002",
       "title": "",
@@ -103,14 +96,21 @@
       "path": "Personal/Camera/Photos/Wellesley, USA/W_USA_002.jpg"
     },
     {
-      "ID": "W_USA_003",
+      "ID": "",
       "title": "",
       "description": "",
       "date": "",
-      "path": "Personal/Camera/Photos/Wellesley, USA/W_USA_003.jpg"
+      "path": "Personal/Camera/Photos/Wellesley, USA/.DS_Store"
     }
   ],
   "Beijing, China": [
+    {
+      "ID": "BJ_CN_003",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Beijing, China/BJ_CN_003.PNG"
+    },
     {
       "ID": "BJ_CN_003",
       "title": "",
@@ -145,13 +145,6 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/Beijing, China/.DS_Store"
-    },
-    {
-      "ID": "BJ_CN_004",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/Beijing, China/BJ_CN_004.jpg"
     }
   ],
   "Rockport, USA": [
@@ -191,6 +184,13 @@
       "path": "Personal/Camera/Photos/Rockport, USA/RP_USA_006.jpg"
     },
     {
+      "ID": "RP_USA_007",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Rockport, USA/RP_USA_007.jpg"
+    },
+    {
       "ID": "RP_USA_005",
       "title": "",
       "description": "",
@@ -203,6 +203,13 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/Rockport, USA/RP_USA_004.jpg"
+    },
+    {
+      "ID": "RP_USA_008",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Rockport, USA/RP_USA_008.jpg"
     }
   ],
   "Hong Kong": [
@@ -222,6 +229,13 @@
     }
   ],
   "St. Donats, Wales": [
+    {
+      "ID": "",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/St. Donats, Wales/.DS_Store"
+    },
     {
       "ID": "StD_W_003",
       "title": "",
@@ -249,29 +263,29 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/St. Donats, Wales/StD_W_001.jpg"
-    },
-    {
-      "ID": "StD_W_004",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/St. Donats, Wales/StD_W_004.jpg"
     }
   ],
   "Shandong, China": [
     {
-      "ID": "SD,CN_001",
+      "ID": "SD_CN_000",
       "title": "",
       "description": "",
       "date": "",
-      "path": "Personal/Camera/Photos/Shandong, China/SD,CN_001.jpg"
+      "path": "Personal/Camera/Photos/Shandong, China/SD_CN_000.jpg"
     },
     {
-      "ID": "SD,CN_000",
+      "ID": "SD_CN_001",
       "title": "",
       "description": "",
       "date": "",
-      "path": "Personal/Camera/Photos/Shandong, China/SD,CN_000.jpg"
+      "path": "Personal/Camera/Photos/Shandong, China/SD_CN_001.jpg"
+    },
+    {
+      "ID": "",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Shandong, China/.DS_Store"
     }
   ],
   "Valencia, Spain": [
@@ -353,6 +367,13 @@
       "path": "Personal/Camera/Photos/Valencia, Spain/VL_SP_007.jpg"
     },
     {
+      "ID": "VL_SP_013",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Valencia, Spain/VL_SP_013.jpg"
+    },
+    {
       "ID": "VL_SP_012",
       "title": "",
       "description": "",
@@ -368,6 +389,13 @@
     }
   ],
   "Tokyo, Japan": [
+    {
+      "ID": "",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Tokyo, Japan/.DS_Store"
+    },
     {
       "ID": "TK_JP_004",
       "title": "",
@@ -480,6 +508,13 @@
   ],
   "New York, USA": [
     {
+      "ID": "",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New York, USA/.DS_Store"
+    },
+    {
       "ID": "NYC_USA_000",
       "title": "",
       "description": "",
@@ -492,6 +527,41 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/New York, USA/NYC_USA_001.jpg"
+    },
+    {
+      "ID": "NYC_USA_003",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New York, USA/NYC_USA_003.jpg"
+    },
+    {
+      "ID": "NYC_USA_002",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New York, USA/NYC_USA_002.jpg"
+    },
+    {
+      "ID": "NYC_USA_006",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New York, USA/NYC_USA_006.jpg"
+    },
+    {
+      "ID": "NYC_USA_005",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New York, USA/NYC_USA_005.jpg"
+    },
+    {
+      "ID": "NYC_USA_004",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New York, USA/NYC_USA_004.jpg"
     }
   ],
   "Hangzhou, China": [
@@ -540,6 +610,13 @@
       "path": "Personal/Camera/Photos/Berlin, Germany/BER_DE_005.jpg"
     },
     {
+      "ID": "",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Berlin, Germany/.DS_Store"
+    },
+    {
       "ID": "BER_DE_004",
       "title": "",
       "description": "",
@@ -574,13 +651,6 @@
       "path": "Personal/Camera/Photos/London, England/LDN_ENG_004.jpg"
     },
     {
-      "ID": "LDN_ENG_005",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/London, England/LDN_ENG_005.jpg"
-    },
-    {
       "ID": "LDN_ENG_002",
       "title": "",
       "description": "",
@@ -610,6 +680,13 @@
     }
   ],
   "Dali, China": [
+    {
+      "ID": "",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Dali, China/.DS_Store"
+    },
     {
       "ID": "DL_CN_000",
       "title": "",
@@ -641,13 +718,6 @@
   ],
   "Arua, Uganda": [
     {
-      "ID": "ARUA_UG_004",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/Arua, Uganda/ARUA_UG_004.jpg"
-    },
-    {
       "ID": "ARUA_UG_001",
       "title": "",
       "description": "",
@@ -660,6 +730,27 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/Arua, Uganda/.DS_Store"
+    },
+    {
+      "ID": "ARUA_UG_000",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Arua, Uganda/ARUA_UG_000.jpg"
+    },
+    {
+      "ID": "ARUA_UG_002",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Arua, Uganda/ARUA_UG_002.jpg"
+    },
+    {
+      "ID": "ARUA_UG_003",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/Arua, Uganda/ARUA_UG_003.jpg"
     }
   ],
   "Paris, France": [
@@ -690,13 +781,6 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/Paris, France/PR_FR_001.jpg"
-    },
-    {
-      "ID": "PR_FR_004",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/Paris, France/PR_FR_004.jpg"
     }
   ],
   "Barcelona, Spain": [
@@ -736,13 +820,57 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/Middlebury, USA/MIDD_USA_000.jpg"
-    },
+    }
+  ],
+  "New Haven, USA": [
     {
-      "ID": "MIDD_USA_002",
+      "ID": "NH_USA_006",
       "title": "",
       "description": "",
       "date": "",
-      "path": "Personal/Camera/Photos/Middlebury, USA/MIDD_USA_002.jpg"
+      "path": "Personal/Camera/Photos/New Haven, USA/NH_USA_006.jpg"
+    },
+    {
+      "ID": "NH_USA_005",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New Haven, USA/NH_USA_005.jpg"
+    },
+    {
+      "ID": "NH_USA_004",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New Haven, USA/NH_USA_004.jpg"
+    },
+    {
+      "ID": "NH_USA_000",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New Haven, USA/NH_USA_000.jpg"
+    },
+    {
+      "ID": "NH_USA_001",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New Haven, USA/NH_USA_001.jpg"
+    },
+    {
+      "ID": "NH_USA_003",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New Haven, USA/NH_USA_003.jpg"
+    },
+    {
+      "ID": "NH_USA_002",
+      "title": "",
+      "description": "",
+      "date": "",
+      "path": "Personal/Camera/Photos/New Haven, USA/NH_USA_002.jpg"
     }
   ]
 }
