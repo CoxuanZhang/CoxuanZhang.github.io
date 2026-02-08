@@ -73,7 +73,7 @@
       "properties": {
         "location": "Rockport, USA",
         "ID": "RP_USA",
-        "photo_counts": 9
+        "photo_counts": 8
       }
     },
     {
@@ -193,7 +193,7 @@
       "properties": {
         "location": "New York, USA",
         "ID": "NYC_USA",
-        "photo_counts": 6
+        "photo_counts": 5
       }
     },
     {
@@ -298,7 +298,7 @@
       "properties": {
         "location": "Arua, Uganda",
         "ID": "ARUA_UG",
-        "photo_counts": 5
+        "photo_counts": 3
       }
     },
     {
@@ -358,7 +358,7 @@
       "properties": {
         "location": "New Haven, USA",
         "ID": "NH_USA",
-        "photo_counts": 7
+        "photo_counts": 5
       }
     }
   ]

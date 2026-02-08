@@ -109,13 +109,6 @@
       "title": "",
       "description": "",
       "date": "",
-      "path": "Personal/Camera/Photos/Beijing, China/BJ_CN_003.PNG"
-    },
-    {
-      "ID": "BJ_CN_003",
-      "title": "",
-      "description": "",
-      "date": "",
       "path": "Personal/Camera/Photos/Beijing, China/BJ_CN_003.jpg"
     },
     {
@@ -138,13 +131,6 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/Beijing, China/BJ_CN_001.jpg"
-    },
-    {
-      "ID": "",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/Beijing, China/.DS_Store"
     }
   ],
   "Rockport, USA": [
@@ -203,13 +189,6 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/Rockport, USA/RP_USA_004.jpg"
-    },
-    {
-      "ID": "RP_USA_008",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/Rockport, USA/RP_USA_008.jpg"
     }
   ],
   "Hong Kong": [
@@ -543,20 +522,6 @@
       "path": "Personal/Camera/Photos/New York, USA/NYC_USA_002.jpg"
     },
     {
-      "ID": "NYC_USA_006",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/New York, USA/NYC_USA_006.jpg"
-    },
-    {
-      "ID": "NYC_USA_005",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/New York, USA/NYC_USA_005.jpg"
-    },
-    {
       "ID": "NYC_USA_004",
       "title": "",
       "description": "",
@@ -744,13 +709,6 @@
       "description": "",
       "date": "",
       "path": "Personal/Camera/Photos/Arua, Uganda/ARUA_UG_002.jpg"
-    },
-    {
-      "ID": "ARUA_UG_003",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/Arua, Uganda/ARUA_UG_003.jpg"
     }
   ],
   "Paris, France": [
@@ -823,20 +781,6 @@
     }
   ],
   "New Haven, USA": [
-    {
-      "ID": "NH_USA_006",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/New Haven, USA/NH_USA_006.jpg"
-    },
-    {
-      "ID": "NH_USA_005",
-      "title": "",
-      "description": "",
-      "date": "",
-      "path": "Personal/Camera/Photos/New Haven, USA/NH_USA_005.jpg"
-    },
     {
       "ID": "NH_USA_004",
       "title": "",

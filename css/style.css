@@ -11,6 +11,7 @@
     z-index: 2000;
     /* Make sure children are positioned relative to this container */
     position: fixed;
+    padding:10px;
 }
 #drawer-scroll-container {
     width: 100%;
@@ -80,8 +81,9 @@ header{
         font-size: 10vh;
         color: #02263D;
         text-align: center;
-        margin-top: 6vh;
+                margin-top: 0;
         line-height: 0.95;
+        margin-top:6vh;
         margin-bottom:3vh;
     }
     .button-container{
@@ -98,6 +100,16 @@ header{
     #bottom-p{
       margin-bottom:2vh;
     }
+}
+#camera {
+    position:absolute;
+    margin-top: 0;
+    top: 5vh;
+    z-index: 5000;
+    width: 100px;
+    max-width:20vw;
+    display: flex;
+    align-items: center;
 }
 
 .container{
