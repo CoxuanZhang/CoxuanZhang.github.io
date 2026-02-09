@@ -18,22 +18,38 @@ const imageCount = 43; // 000.jpg to 042.jpg
                     offsetX = e.clientX - el.offsetLeft;
                     offsetY = e.clientY - el.offsetTop;
                     document.body.style.userSelect = 'none';
-                    el.style.pointerEvents = 'none';
-                    document.addEventListener('mousemove', moveHandler);
-                    document.addEventListener('mouseup', upHandler);
+                    el.setPointerCapture && el.setPointerCapture(e.pointerId);
                 });
-                function moveHandler(e) {
+                el.addEventListener('mousemove', function(e) {
                     if (!isDragging) return;
                     el.style.left = (e.clientX - offsetX) + 'px';
                     el.style.top = (e.clientY - offsetY) + 'px';
-                }
-                function upHandler() {
+                });
+                el.addEventListener('mouseup', function(e) {
                     isDragging = false;
                     document.body.style.userSelect = '';
-                    el.style.pointerEvents = '';
-                    document.removeEventListener('mousemove', moveHandler);
-                    document.removeEventListener('mouseup', upHandler);
-                }
+                    el.releasePointerCapture && el.releasePointerCapture(e.pointerId);
+                });
+                // For touch devices
+                el.addEventListener('touchstart', function(e) {
+                    isDragging = true;
+                    zIndexCounter++;
+                    el.style.zIndex = zIndexCounter;
+                    const touch = e.touches[0];
+                    offsetX = touch.clientX - el.offsetLeft;
+                    offsetY = touch.clientY - el.offsetTop;
+                    document.body.style.userSelect = 'none';
+                });
+                el.addEventListener('touchmove', function(e) {
+                    if (!isDragging) return;
+                    const touch = e.touches[0];
+                    el.style.left = (touch.clientX - offsetX) + 'px';
+                    el.style.top = (touch.clientY - offsetY) + 'px';
+                });
+                el.addEventListener('touchend', function(e) {
+                    isDragging = false;
+                    document.body.style.userSelect = '';
+                });
             }
 
                         window.addEventListener('DOMContentLoaded', function() {
@@ -63,6 +79,9 @@ const imageCount = 43; // 000.jpg to 042.jpg
                                                 makeDraggable(img);
                                                 // Double-click to show modal
                                                 img.addEventListener('dblclick', function() {
+                                                        // Remove any existing modal
+                                                        const existingModal = document.getElementById('scrapbook-desc-modal');
+                                                        if (existingModal) existingModal.remove();
                                                         // Extract ID from filename (.png only)
                                                         const match = img.src.match(/(\d{3})\.png$/);
                                                         const id = match ? match[1] : null;
@@ -70,6 +89,7 @@ const imageCount = 43; // 000.jpg to 042.jpg
                                                         const desc = descObj ? descObj.description : 'No description available.';
                                                         // Create modal beside image, above it
                                                         const modal = document.createElement('div');
+                                                        modal.id = 'scrapbook-desc-modal';
                                                         modal.style.position = 'absolute';
                                                         // Position modal above and to the right of the image
                                                         const rect = img.getBoundingClientRect();
