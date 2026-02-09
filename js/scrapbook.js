@@ -18,16 +18,22 @@ const imageCount = 43; // 000.jpg to 042.jpg
                     offsetX = e.clientX - el.offsetLeft;
                     offsetY = e.clientY - el.offsetTop;
                     document.body.style.userSelect = 'none';
+                    el.style.pointerEvents = 'none';
+                    document.addEventListener('mousemove', moveHandler);
+                    document.addEventListener('mouseup', upHandler);
                 });
-                document.addEventListener('mousemove', function(e) {
+                function moveHandler(e) {
                     if (!isDragging) return;
                     el.style.left = (e.clientX - offsetX) + 'px';
                     el.style.top = (e.clientY - offsetY) + 'px';
-                });
-                document.addEventListener('mouseup', function() {
+                }
+                function upHandler() {
                     isDragging = false;
                     document.body.style.userSelect = '';
-                });
+                    el.style.pointerEvents = '';
+                    document.removeEventListener('mousemove', moveHandler);
+                    document.removeEventListener('mouseup', upHandler);
+                }
             }
 
                         window.addEventListener('DOMContentLoaded', function() {
@@ -74,7 +80,7 @@ const imageCount = 43; // 000.jpg to 042.jpg
                                                         modal.style.borderRadius = '12px';
                                                         modal.style.boxShadow = '0 4px 24px rgba(0,0,0,0.15)';
                                                         modal.style.maxWidth = '320px';
-                                                        modal.style.fontSize = '1.1em';
+                                                        modal.style.fontSize = '2.2vh';
                                                         modal.style.textAlign = 'left';
                                                         modal.style.zIndex = 99999;
                                                         modal.innerHTML = `${desc}<br><button style='margin-top:14px;padding:6px 16px;border-radius:8px;border:none;background:#e0c97f;color:#02263D;font-size:1em;cursor:pointer;'>Close</button>`;
