@@ -31,6 +31,10 @@ const imageCount = 43; // 000.jpg to 042.jpg
             }
 
             window.addEventListener('DOMContentLoaded', function() {
+                const header = document.querySelector('header');
+                const headerHeight = header ? header.offsetHeight : 0;
+                const minTop = headerHeight + 16; // 16px margin below header
+                const maxTop = window.innerHeight - 220;
                 images.forEach(src => {
                     const img = document.createElement('img');
                     img.src = src;
@@ -38,7 +42,7 @@ const imageCount = 43; // 000.jpg to 042.jpg
                     img.style.position = 'absolute';
                     img.style.width = randomInt(120, 220) + 'px';
                     img.style.left = randomInt(0, window.innerWidth - 220) + 'px';
-                    img.style.top = randomInt(120, window.innerHeight - 220) + 'px';
+                    img.style.top = randomInt(minTop, maxTop) + 'px';
                     img.style.cursor = 'grab';
                     makeDraggable(img);
                     document.body.appendChild(img);
