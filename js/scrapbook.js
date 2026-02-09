@@ -55,7 +55,7 @@ const imageCount = 43; // 000.jpg to 042.jpg
                         window.addEventListener('DOMContentLoaded', function() {
                                 // Load descriptions from sb.js
                                 let descriptions = [];
-                                fetch('Personal/Scrapbook/sb.js')
+                                fetch('Personal/Scrapbook/sb.json')
                                     .then(resp => resp.text())
                                     .then(text => {
                                         try {
