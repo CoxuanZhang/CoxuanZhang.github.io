@@ -6,12 +6,12 @@ def rename_photos():
     temp_names = []
     # First pass: rename all to temp names
     for i, filename in enumerate(files):
-        temp_name = f"__temp__{i}__.jpg"
+        temp_name = f"__temp__{i}__.png"
         os.rename(filename, temp_name)
         temp_names.append(temp_name)
     # Second pass: rename temp names to final names
     for count, temp_name in enumerate(temp_names):
-        final_name = f"{count:03d}.jpg"
+        final_name = f"{count:03d}.png"
         os.rename(temp_name, final_name)
     print(f"Renamed {len(files)} scrapbook photos")
     os.chdir(os.path.join(os.pardir, os.pardir))

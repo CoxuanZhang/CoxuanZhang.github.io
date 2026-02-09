@@ -1,0 +1,170 @@
+[
+  {
+    "ID": "008",
+    "description":"There's three student-led conference every year in high school. This one's an artifact from Origin (Art Conference) where we each got a note from an anonymous friend!"
+  },
+    {
+    "ID": "005",
+    "description":"I'm very bad at Christmas cracker riddles, and definitely didn't sort this one but picked it up from the ground after dinner."
+  },
+    {
+    "ID": "001",
+    "description":"I binged all Kafka works in a summer in 2021, and has loved his doodles ever since. I printed this guy for wall decoration in high school."
+  },
+    {
+    "ID": "002",
+    "description":"MFA displayed O'Keefe's wonder in 2024, and I feasted on every piece with my friends Natalie and Diana. Here is one of her New Mexican ram skull I sketched."
+  },
+    {
+    "ID": "012",
+    "description":"There were two supermarkets in Llantwit Major, COOP and Filco. Coop has been slightly fancier but significantly smaller one, and here goes a receipt."
+  },
+    {
+    "ID": "016",
+    "description":"I went to Roulin Family portrait exhibition at MFA for 5 times, and love the twisted baby portraits."
+  },
+    {
+    "ID": "019",
+    "description":"Dancing Camus! I get so jiggly every time I see this on my wall in high school."
+  },
+    {
+    "ID": "018",
+    "description":"Drag Bingo at Wellesley! I haven't won any prizes or did any impromptu on the dancefloor so far but I'll keep trying."
+  },
+    {
+    "ID": "033",
+    "description":"This is the oldest item I have in my scrapbook, cut out of the vocab flashcards I made for SAT in 2021."
+  },
+    {
+    "ID": "013",
+    "description":"I got into collecting old films at vintage stores in New Haven in the summer of 2023. They only show when you hold it up against light, and this one was taken at the amusement park."
+  },
+    {
+    "ID": "015",
+    "description":"The thinker sculpture facing the Atlantic in my high school, and I used to run pass it to class every morning at 8."
+  },
+    {
+    "ID": "020",
+    "description":"All MFA tickets has 'Here You Belong' on the back, and this is one of the hundreds I stocked up."
+  },
+    {
+    "ID": "017",
+    "description":"At the end of high school, I cut up some old brochures at the bottom of my drawer to spell beginning."
+  },
+    {
+    "ID": "007",
+    "description":"This is from interrailing Europe during grad trip, where I enjoyed the best public transport outside of East Asia!"
+  },
+    {
+    "ID": "006",
+    "description":"STEP UP! This is part of Wellesley's orientation kit."
+  },
+    {
+    "ID": "000",
+    "description":"We made carnival masks in Afro-Carib Conference at high school. It was such an amazing conference, and witnessing my friend Nawale pull it off was so cool and inspiring!"
+  },
+    {
+    "ID": "003",
+    "description":"Pressing dried flower is a skill I'd like to get better at."
+  },
+    {
+    "ID": "037",
+    "description":"Solidarity with Wellesley Non-Tenure Track faculties during their strike in Spring 2025. What a time for Wellesley"
+  },
+    {
+    "ID": "036",
+    "description":"Two of my favorite characters from Disco Elysium (best RPG video game!) that I drew and made prints of."
+  },
+    {
+    "ID": "029",
+    "description":"My ex-roommate Amy's father's bakery in Prague. We popped by on our last day in Prague during grad trip. It was carb heaven!!"
+  },
+    {
+    "ID": "032",
+    "description":"Visiting Prague at the day of hundred year memorial for Kafka's passing means getting a lot of merches."
+  },
+    {
+    "ID": "026",
+    "description":"I thought this is the best K-BBQ Chicken possible in New Haven."
+  },
+    {
+    "ID": "025",
+    "description":"Their Kimchi Croissant has been unparalleled (go try it if you're in Boston area), and everything about Jamaican Plain keeps bringing me back."
+  },
+    {
+    "ID": "039",
+    "description":"Good fortune found at Senso-ji Temple."
+  },
+    {
+    "ID": "034",
+    "description":"Chopsticks packaging from Asian restaurants is my favorite thing to collect despite there being a lot of repetitions. Look at the panda on this one!"
+  },
+    {
+    "ID": "041",
+    "description":"For my 18th birthday, Aidan and Alice got me a bag of fan-made Disco Elysium stickers, and obviously the horrific necktie is the star of the show."
+  },
+    {
+    "ID": "042",
+    "description":"My ex-roommates Amy from England (and Sri-Lanka) and Amy from Prague had this conversation when we're talking about regional cuisines. When Alice proudly claimed tea cakes to be English, Amy showed a photo of the Czech tea cake, but we all had tea cakes together happily."
+  },
+    {
+    "ID": "009",
+    "description":"Part of the MIT Admission brochure. I remember wanting to switch tracks to STEM but fearing it's too late after touring MIT in high school. Now I did in university."
+  },
+    {
+    "ID": "004",
+    "description":"The canon event of watching nutcrackers as a college student in Boston! I had the honor to do it on Diana's birthday."
+  },
+    {
+    "ID": "038",
+    "description":"Spending midautumn away from home is personally more difficult than spending CNY away. This is a side of a beautiful mooncake package."
+  },
+    {
+    "ID": "010",
+    "description":"I have dabbled with bass for more than 4 years now, and got my own bass three years in. This is when excited me backpacked my big bass on the student shuttle to get its neck adjusted."
+  },
+    {
+    "ID": "014",
+    "description":"Sitting in the McDonalds with a childhood friend, I was suddenly saddened by how fast we grew and how brutally we threw ourselves behind. The guys in the burger bag was so jolly and I brought them back."
+  },
+    {
+    "ID": "021",
+    "description":"Eva-luna and I were in charge of making the 'China' section in our CAS pop-up exhibition on stereotype, which resulted in a mass-production of MADE IN CHINA tags"
+  },
+    {
+    "ID": "022",
+    "description":"A dabbing dog and fox from a record store near the Hague, and per Dutch tradition, we biked there."
+  },
+    {
+    "ID": "023",
+    "description":"For Schiele's sketches, the rawness of it always pulls me in. Words can't capture the beauty of human bodies in his work."
+  },
+    {
+    "ID": "024",
+    "description":"I prayed I'll be more into poetry at my return when I first went into Grolier. Despite not moving too far along the way, I have returned to this cozy shop many many times."
+  },
+    {
+    "ID": "027",
+    "description":"Starry cards from my friends at the end of my first contemporary dance performance at Wellesley. I love you friends!"
+  },
+    {
+    "ID": "030",
+    "description":"Japanese poster designs... Wow... I have them all over my dorm wall right now. This particular kanji character design really calls to me. 時 for time."
+  },
+    {
+    "ID": "031",
+    "description":"I love it when museums have activities for visitors. I did this watercolor painting at MFS inpired by the instagram art I saw with a punchline — 'don't look at me like a deer'."
+  },
+    {
+    "ID": "035",
+    "description":"In seminars where everyone sits in a rectangular formation, I love drawing my peers sitting across the aisle. Their hair was great that day!"
+  },
+    {
+    "ID": "040",
+    "description":"Towards graduation, I spent a lot of time on boardgame. This is when Zina brought her own Sherlock-themed detective game to our session, and we all took home some artifacts!"
+  },
+    {
+    "ID": "043",
+    "description":"I try to bring gifts to my very young brother from kids sections around the world, and sometimes it falls back to classic like the very hungry caterpillar."
+  }
+]
