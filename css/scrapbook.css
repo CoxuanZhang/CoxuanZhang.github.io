@@ -163,3 +163,27 @@ button{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.scrapbook-photo {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    border-radius: 8px;
+    transition: box-shadow 0.2s;
+}
+.scrapbook-photo:active {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+}
+
+#scrapbook-instructions {
+  position: fixed;
+  right: -10%;
+  top: 25%;
+  max-width: 20%;
+  transform: translateX(-50%);
+  background: #fffbe6;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 18px 32px;
+  z-index: 100000;
+  font-size: 2vh;
+  text-align: left;
+}
