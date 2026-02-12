@@ -12,23 +12,26 @@ const imageCount = 43; // 000.jpg to 042.jpg
             function makeDraggable(el) {
                 let offsetX, offsetY, isDragging = false;
                 el.addEventListener('mousedown', function(e) {
+                    e.preventDefault();
                     isDragging = true;
                     zIndexCounter++;
                     el.style.zIndex = zIndexCounter;
                     offsetX = e.clientX - el.offsetLeft;
                     offsetY = e.clientY - el.offsetTop;
                     document.body.style.userSelect = 'none';
-                    el.setPointerCapture && el.setPointerCapture(e.pointerId);
-                });
-                el.addEventListener('mousemove', function(e) {
-                    if (!isDragging) return;
-                    el.style.left = (e.clientX - offsetX) + 'px';
-                    el.style.top = (e.clientY - offsetY) + 'px';
-                });
-                el.addEventListener('mouseup', function(e) {
-                    isDragging = false;
-                    document.body.style.userSelect = '';
-                    el.releasePointerCapture && el.releasePointerCapture(e.pointerId);
+                    function mouseMoveHandler(ev) {
+                        if (!isDragging) return;
+                        el.style.left = (ev.clientX - offsetX) + 'px';
+                        el.style.top = (ev.clientY - offsetY) + 'px';
+                    }
+                    function mouseUpHandler(ev) {
+                        isDragging = false;
+                        document.body.style.userSelect = '';
+                        document.removeEventListener('mousemove', mouseMoveHandler);
+                        document.removeEventListener('mouseup', mouseUpHandler);
+                    }
+                    document.addEventListener('mousemove', mouseMoveHandler);
+                    document.addEventListener('mouseup', mouseUpHandler);
                 });
                 // For touch devices
                 el.addEventListener('touchstart', function(e) {
@@ -56,6 +59,7 @@ const imageCount = 43; // 000.jpg to 042.jpg
                                 // Load descriptions from sb.js
                                 let descriptions = [];
                                 fetch('Personal/Scrapbook/sb.json')
+<<<<<<< HEAD
                                     .then(resp => resp.text())
                                     .then(text => {
                                         try {
@@ -63,6 +67,11 @@ const imageCount = 43; // 000.jpg to 042.jpg
                                         } catch (e) {
                                             console.error('Failed to parse sb.js:', e);
                                         }
+=======
+                                    .then(resp => resp.json())
+                                    .then(data => {
+                                        descriptions = data;
+>>>>>>> 708992c (fix scrapbook page)
                                         const header = document.querySelector('header');
                                         const headerHeight = header ? header.offsetHeight : 0;
                                         const minTop = headerHeight + 30;
@@ -87,14 +96,10 @@ const imageCount = 43; // 000.jpg to 042.jpg
                                                         const id = match ? match[1] : null;
                                                         const descObj = id ? descriptions.find(d => d.ID === id) : null;
                                                         const desc = descObj ? descObj.description : 'No description available.';
-                                                        // Create modal beside image, above it
+                                                        // Create modal beside cursor
                                                         const modal = document.createElement('div');
                                                         modal.id = 'scrapbook-desc-modal';
                                                         modal.style.position = 'absolute';
-                                                        // Position modal above and to the right of the image
-                                                        const rect = img.getBoundingClientRect();
-                                                        modal.style.left = (rect.right + 12) + 'px';
-                                                        modal.style.top = (rect.top - 8) + 'px';
                                                         modal.style.background = '#fff';
                                                         modal.style.padding = '24px 18px';
                                                         modal.style.borderRadius = '12px';
@@ -106,6 +111,37 @@ const imageCount = 43; // 000.jpg to 042.jpg
                                                         modal.innerHTML = `${desc}<br><button style='margin-top:14px;padding:6px 16px;border-radius:8px;border:none;background:#e0c97f;color:#02263D;font-size:1em;cursor:pointer;'>Close</button>`;
                                                         modal.querySelector('button').onclick = () => document.body.removeChild(modal);
                                                         document.body.appendChild(modal);
+                                                        // Position beside image, left or right depending on space
+                                                        const padding = 16;
+                                                        const modalRect = modal.getBoundingClientRect();
+                                                        const imgRect = img.getBoundingClientRect();
+                                                        const spaceLeft = imgRect.left;
+                                                        const spaceRight = window.innerWidth - imgRect.right;
+                                                        let left, top;
+                                                        top = imgRect.top + (imgRect.height - modalRect.height) / 2;
+                                                        // Prevent overflow top
+                                                        if (top < padding) top = padding;
+                                                        // Prevent overflow bottom
+                                                        if (top + modalRect.height + padding > window.innerHeight) {
+                                                            top = window.innerHeight - modalRect.height - padding;
+                                                        }
+                                                        if (spaceRight > spaceLeft) {
+                                                            // Place modal to the right
+                                                            left = imgRect.right + 18;
+                                                            if (left + modalRect.width + padding > window.innerWidth) {
+                                                                left = window.innerWidth - modalRect.width - padding;
+                                                            }
+                                                        } else {
+                                                            // Place modal to the left
+                                                            left = imgRect.left - modalRect.width - 18;
+                                                            if (left < padding) left = padding;
+                                                        }
+                                                        modal.style.left = left + 'px';
+                                                        modal.style.top = top + 'px';
+                                                        // Remove modal on close
+                                                        modal.querySelector('button').onclick = () => {
+                                                            document.body.removeChild(modal);
+                                                        };
                                                 });
                                                 document.body.appendChild(img);
                                         });
