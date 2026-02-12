@@ -59,7 +59,6 @@ const imageCount = 42; // 000.jpg to 042.jpg
                                 // Load descriptions from sb.js
                                 let descriptions = [];
                                 fetch('Personal/Scrapbook/sb.json')
-<<<<<<< HEAD
                                     .then(resp => resp.text())
                                     .then(text => {
                                         try {
@@ -67,11 +66,6 @@ const imageCount = 42; // 000.jpg to 042.jpg
                                         } catch (e) {
                                             console.error('Failed to parse sb.js:', e);
                                         }
-=======
-                                    .then(resp => resp.json())
-                                    .then(data => {
-                                        descriptions = data;
->>>>>>> 708992c (fix scrapbook page)
                                         const header = document.querySelector('header');
                                         const headerHeight = header ? header.offsetHeight : 0;
                                         const minTop = headerHeight + 30;
