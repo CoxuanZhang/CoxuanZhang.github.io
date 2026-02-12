@@ -1,4 +1,15 @@
 [
+  {
+    "id": "uganda",
+    "filepath": "Personal/Writing/uganda.md",
+    "title": "A Khawaja's Dream",
+    "date": "2026-02-09",
+    "tags": [
+      "people",
+      "poem"
+    ],
+    "excerpt": "To the beautiful people I met in Uganda, I hope the rain season comes softly, cassavas grow on your plateas and your day-long journey to the Kampala gets less bumpy."
+  },
     {
     "id": "explainability",
     "filepath": "Personal/Writing/explainability.md",
@@ -36,7 +47,7 @@
     "title": "As We Know It: Cutting the Cord",
     "date": "2024-04",
     "tags": [
-      "family",
+      "people",
       "reflection",
       "stage"
     ],

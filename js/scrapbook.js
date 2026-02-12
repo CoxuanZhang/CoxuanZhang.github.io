@@ -1,4 +1,4 @@
-const imageCount = 43; // 000.jpg to 042.jpg
+const imageCount = 42; // 000.jpg to 042.jpg
             const images = [];
             for (let i = 0; i <= imageCount; i++) {
                 images.push(`Personal/Scrapbook/img/${String(i).padStart(3, '0')}.png`);
