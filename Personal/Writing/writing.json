@@ -8,7 +8,18 @@
       "people",
       "poem"
     ],
-    "excerpt": "To the beautiful people I met in Uganda, I hope the rain season comes softly, cassavas grow on your plateas and your day-long journey to the Kampala gets less bumpy."
+    "excerpt": "To the beautiful people I met in Uganda, I hope the rain season comes softly and cassavas grow on your plates."
+  },
+  {
+    "id": "fenris",
+    "filepath": "Personal/Writing/fenris.md",
+    "title": "Race to the Sea",
+    "date": "2026-01-26",
+    "tags": [
+      "people",
+      "poem"
+    ],
+    "excerpt": "To Fenris, Ahlya’s Jeju Stray Boy. I miss you and look forward to our next walk."
   },
     {
     "id": "explainability",
@@ -51,6 +62,6 @@
       "reflection",
       "stage"
     ],
-    "excerpt": "Dear father, I want to cut our umbilical cord to our pasts and childhoods.                   "
+    "excerpt": "Dear father, I want to cut the umbilical cord to our pasts and childhoods.                   "
   }
 ]
