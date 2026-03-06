@@ -11,6 +11,17 @@
     "excerpt": "To the beautiful people I met in Uganda, I hope the rain season comes softly and cassavas grow on your plates."
   },
   {
+    "id": "daisies",
+    "filepath": "Personal/Writing/daisies.md",
+    "title": "Daisies in London",
+    "date": "2026-02-02",
+    "tags": [
+      "people",
+      "poem"
+    ],
+    "excerpt": "To a friend, agains discouragement. Inspired by Věra Chytilová’s film Daisies (1966) that features two girls and their bizarre pranks"
+  },
+  {
     "id": "fenris",
     "filepath": "Personal/Writing/fenris.md",
     "title": "Race to the Sea",
