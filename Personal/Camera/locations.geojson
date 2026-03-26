@@ -360,6 +360,21 @@
         "ID": "NH_USA",
         "photo_counts": 5
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.067,
+          18.45
+        ]
+      },
+      "properties": {
+        "location": "Puerto Rico",
+        "ID": "PR",
+        "photo_counts": 6
+      }
     }
   ]
 }

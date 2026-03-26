@@ -185,11 +185,10 @@ header{
     opacity: 0; 
     transition: opacity 0.5s ease; 
     display: flex;
-    justify-content: flex-end;
 }
 #overlay-text {
-    color: white;
-    margin-right: 3vh;
+    color: #ffd502;
+    margin-left: 3vh;
     margin-top:3vh;
 }
 
