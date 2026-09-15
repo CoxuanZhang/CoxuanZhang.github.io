@@ -266,15 +266,13 @@ button{
 }
 
 .gallery-container {
-    display: flex;       /* Activate Flexbox on the container */
-    flex-wrap: wrap;     /* Allow items to wrap to a new line */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px;           /* Add space between items */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .gallery-item {
-    /* flex: 1 1 300px; */  /* Shorthand: Grow=1, Shrink=1, Base Width=300px */
-    width: 400px;        /* Sets a default width for each item */
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;    /* Ensures image corners match container corners */
@@ -287,6 +285,12 @@ button{
     height: 200px;       /* Set a fixed height for consistent gallery look */
     object-fit: cover;   /* Ensures images fill the space without distortion/stretching */
     display: block;
+}
+
+@media (max-width: 700px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .item-info {
