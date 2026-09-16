@@ -22,16 +22,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Create local Mapbox config
         env:
           MAPBOX_ACCESS_TOKEN: ${{ secrets.MAPBOX_ACCESS_TOKEN }}
         run: |
-          test -n "$MAPBOX_ACCESS_TOKEN"
+          if [ -z "$MAPBOX_ACCESS_TOKEN" ]; then
+            echo "MAPBOX_ACCESS_TOKEN is not configured in the repository or github-pages environment secrets."
+            exit 1
+          fi
           printf "const MAPBOX_ACCESS_TOKEN = '%s';\n" "$MAPBOX_ACCESS_TOKEN" > js/mapbox-config.js
 
       - name: Upload Pages artifact
